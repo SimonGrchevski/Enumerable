@@ -4,7 +4,7 @@ module MyEnumerable
       if block.nil?
         return false unless yield k
       else
-        return false unless re == block
+        return false unless k == block
       end
     end
     true
