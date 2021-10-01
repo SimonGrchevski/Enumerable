@@ -6,8 +6,8 @@ class MyList
     @enumerables = enumerables
   end
 
-  def each(&block)
-    @enumerables.each(&block)
+  def each
+    @enumerables.each { |enu| yield enu if block_given? }
   end
 end
 
