@@ -14,7 +14,7 @@ module MyEnumerable
     @enumerables.each do |k|
       if !block.nil?
         my_boolean = false
-        arr.each do |i|
+        @enumerables.each do |i|
           my_boolean = true if i == block
         end
         return my_boolean
