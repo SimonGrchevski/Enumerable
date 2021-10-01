@@ -5,6 +5,10 @@ class MyList
   def initialize(*enumerables)
     @enumerables = enumerables
   end
+
+  def each(&block)
+    @enumerables.each(&block)
+  end
 end
 
 # Create our list

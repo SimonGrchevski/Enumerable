@@ -6,6 +6,13 @@
 
 - Ruby
 
+## How to Run Rubocop
+
+- The first step is to install the required gem by typing inside your terminal 'gem install rspec'(RSpec should be installed now)
+- The second step is to cd into the project folder
+- The third step is to run the command 'rspec spec/random_spec.rb'
+- All tests are running now.
+
 
 ## Authors
 

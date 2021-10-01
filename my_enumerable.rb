@@ -1,6 +1,6 @@
 module MyEnumerable
   def all?(block = nil)
-    @enumerables.each do |k|
+    each do |k|
       if block.nil?
         return false unless yield k
       else
@@ -11,7 +11,7 @@ module MyEnumerable
   end
 
   def any?(block = nil)
-    @enumerables.each do |k|
+    each do |k|
       if !block.nil?
         my_boolean = false
         @enumerables.each do |i|
@@ -27,7 +27,7 @@ module MyEnumerable
 
   def filter
     result = []
-    @enumerables.each do |k|
+    each do |k|
       result << k if yield k
     end
     result
