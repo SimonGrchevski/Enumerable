@@ -24,4 +24,12 @@ module MyEnumerable
     end
     false
   end
+
+  def filter
+    result = []
+    @enumerables.each do |k|
+      result << k if yield k
+    end
+    result
+  end
 end
